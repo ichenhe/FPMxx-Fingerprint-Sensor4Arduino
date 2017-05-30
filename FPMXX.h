@@ -54,9 +54,9 @@ public:
 	/*设置模块地址，用于通讯。不设置默认为0xFFFFFFFF*/
 	void setCurrentAddress(uint8_t address[]);
 	/*获取指纹库容量*/
-	uint16_t getFingerStoreSize(uint16_t *num);
+	uint8_t getFingerStoreSize(uint16_t *num);
 	/*获取已有指纹个数*/
-	uint16_t getFingerNum(uint16_t *num);
+	uint8_t getFingerNum(uint16_t *num);
 	/*设置模块安全等级*/
 	uint8_t setSecurityLevel(uint8_t level);
 	/*设置模块密码*/

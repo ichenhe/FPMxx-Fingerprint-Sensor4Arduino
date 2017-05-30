@@ -68,7 +68,7 @@ void FPMXX::setCurrentAddress(uint8_t address[])
 Params:
 num: 储存指纹容量。
 */
-uint16_t FPMXX::getFingerStoreSize(uint16_t *num)
+uint8_t FPMXX::getFingerStoreSize(uint16_t *num)
 {
 	uint8_t content[] = { 0x01,0x00,0x03,0x0F };
 	sendCmd(3, content);
@@ -94,7 +94,7 @@ uint16_t FPMXX::getFingerStoreSize(uint16_t *num)
 Params:
 num: 储存个数。
 */
-uint16_t FPMXX::getFingerNum(uint16_t *num)
+uint8_t FPMXX::getFingerNum(uint16_t *num)
 {
 	uint8_t content[] = { 0x01,0x00,0x03,0x1D };
 	sendCmd(3, content);
